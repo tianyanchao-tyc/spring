@@ -230,6 +230,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @see #refresh()
 	 * @see #close()
 	 * @see #getBeanFactory()
+	 * 上下文是否处于活跃状态
 	 */
 	boolean isActive();
 

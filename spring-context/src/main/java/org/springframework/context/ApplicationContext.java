@@ -54,6 +54,17 @@ import org.springframework.lang.Nullable;
  * @see ConfigurableApplicationContext
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.core.io.ResourceLoader
+ *
+ *
+ *
+ *
+ * IOC容器的高级实现
+ * ApplicationContext
+ * 增加了对国际化消息的支持
+ * 事件的支持
+ * 访问资源扩展，可以从不同的地方得到bean的定义资源
+ *
+ *
  */
 public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
 		MessageSource, ApplicationEventPublisher, ResourcePatternResolver {

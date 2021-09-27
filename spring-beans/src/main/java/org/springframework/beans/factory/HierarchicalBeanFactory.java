@@ -35,6 +35,7 @@ public interface HierarchicalBeanFactory extends BeanFactory {
 
 	/**
 	 * Return the parent bean factory, or {@code null} if there is none.
+	 * 使spring具有了双亲IOC功能
 	 */
 	@Nullable
 	BeanFactory getParentBeanFactory();

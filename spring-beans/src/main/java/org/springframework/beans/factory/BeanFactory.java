@@ -116,6 +116,16 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor#postProcessBeforeDestruction
  * @see DisposableBean#destroy
  * @see org.springframework.beans.factory.support.RootBeanDefinition#getDestroyMethodName
+ *
+ *
+ *
+ *
+ * ioc容器的简单实现  BeanFactory
+ * BeanFctory容器的主要实现路线
+ * {@link HierarchicalBeanFactory} 增加了getParentBeanFactory()方法，使BeanFactory具备了双亲IOC的功能
+ * {@link org.springframework.beans.factory.config.ConfigurableBeanFactory}
+ * ConfigurableBeanFactory中增加了setParentBeanFactory(BeanFactory parentBeanFactory)方法，进行设置此bean工厂的父工厂
+ * addBeanPostProcessor(BeanPostProcessor beanPostProcessor)可以增加后置处理器，通过该工厂产生的bean都会使用
  */
 public interface BeanFactory {
 
