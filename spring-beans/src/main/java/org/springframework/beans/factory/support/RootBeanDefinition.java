@@ -97,7 +97,7 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 	@Nullable
 	Executable resolvedConstructorOrFactoryMethod;
 
-	/** Package-visible field that marks the constructor arguments as resolved. */
+	/* 标识构造函数参数已解析 */
 	boolean constructorArgumentsResolved = false;
 
 	/** Package-visible field for caching fully resolved constructor arguments. */
