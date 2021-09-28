@@ -26,6 +26,8 @@ package org.springframework.aop.framework;
  * @see org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator
  * @see org.springframework.aop.scope.ScopedProxyFactoryBean
  */
+
+/*  标识属于spring AOP基础部分的bean */
 public interface AopInfrastructureBean {
 
 }

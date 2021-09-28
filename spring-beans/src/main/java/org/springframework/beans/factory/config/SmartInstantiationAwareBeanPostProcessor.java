@@ -56,7 +56,7 @@ public interface SmartInstantiationAwareBeanPostProcessor extends InstantiationA
 	}
 
 
-	/* 为了解决循环引用的问题，只有单例对象才会调用这个方法 */
+	/* 解决对象需要代理时的回调，只有单例对象才会调用这个方法 */
 	default Object getEarlyBeanReference(Object bean, String beanName) throws BeansException {
 		return bean;
 	}
